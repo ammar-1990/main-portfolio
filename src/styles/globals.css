@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.heroButton{
+    @apply border px-2 sm:px-6 py-2 border-[#242424] rounded-full uppercase tracking-widest text-xs text-secondary hover:border-main hover:text-main duration-150
+}

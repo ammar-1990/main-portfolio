@@ -14,7 +14,7 @@ module.exports = {
       },
       colors:{
         main:"#DB0000",
-        secondary:"gray"
+        secondary:"rgb(107, 114, 128)"
       }
     },
   },
