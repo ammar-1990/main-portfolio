@@ -13,7 +13,7 @@ const Circles = (props: Props) => {
     }}
     transition={{duration:2.5}}
 
-    className="flex justify-center items-center relative " >
+    className="flex justify-center items-center absolute " >
         <div className="w-[100px] h-[100px]  md:w-[200px] md:h-[200px] border border-[#333333] rounded-full animate-ping absolute"/>
         <div className="w-[200px] h-[200px] md:w-[300px] md:h-[300px] border border-[#333333] rounded-full  absolute" />
         <div className="w-[350px] h-[350px] md:w-[500px] md:h-[500px] border border-[#333333] rounded-full  absolute" />

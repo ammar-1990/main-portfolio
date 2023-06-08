@@ -5,7 +5,7 @@ type Props = {}
 
 function Header({}: Props) {
   return (
-    <header className='sticky top-0 flex items-start justify-between max-w-6xl mx-auto z-20 p-5 w-full'>
+    <header className='fixed top-0 flex items-start justify-between max-w-6xl left-1/2 -translate-x-[50%] z-20 p-5 w-full'>
         <motion.nav 
         initial={{x:-500,opacity:0,scale:0.5}} 
         animate={{x:0,opacity:1,scale:1}}
