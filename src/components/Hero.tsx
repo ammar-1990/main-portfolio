@@ -19,7 +19,7 @@ const [text,count] = useTypewriter({
     <section id="hero" className='h-screen  flex items-center flex-col justify-center  snap-center relative'>
         <Circles />
         <img src={'/images/logo.png'}  alt='logo' className=' w-[75px] md:w-[125px] mt-32'/>
-        <h2 className='mt-4 text-secondary tracking-[15px] uppercase text-xs sm:text-base'>Web Developer</h2>
+        <h2 className='mt-4 text-secondary tracking-[15px] uppercase text-xs sm:text-base -mr-[15px]'>Web Developer</h2>
         <h1 className='text-sm md:text-2xl z-10 font-bold max-w-[350px] min-h-[75px] text-center mt-4'>{text}<Cursor cursorColor='#DB0000' /></h1>
         <div className='z-10 '>
           <Link href={'#about'}><button type='button' className='heroButton'>About</button></Link>  

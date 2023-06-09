@@ -7,3 +7,10 @@
 }
 
 
+.section{
+    @apply h-screen snap-center max-w-6xl mx-auto  pt-24
+}
+
+.title{
+    @apply text-center text-secondary tracking-[25px] uppercase text-2xl -mr-[25px]
+}
