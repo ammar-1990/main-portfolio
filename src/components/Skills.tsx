@@ -4,7 +4,7 @@ type Props = {}
 
 const Skills = (props: Props) => {
   return (
-    <div  id='skills' className='h-screen snap-center'>Skills</div>
+    <section  id='skills' className='h-screen snap-center'>Skills</section>
   )
 }
 
