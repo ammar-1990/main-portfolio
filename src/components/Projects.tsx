@@ -4,7 +4,9 @@ type Props = {}
 
 const Projects = (props: Props) => {
   return (
-    <section  id='projects' className='h-screen snap-center'>Projects</section>
+    <section  id='projects' className='section'>
+      <h1 className='title'>projects</h1>
+    </section>
   )
 }
 

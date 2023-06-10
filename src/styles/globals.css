@@ -12,5 +12,31 @@
 }
 
 .title{
-    @apply text-center text-secondary tracking-[25px] uppercase text-2xl -mr-[25px]
+    @apply text-center text-secondary tracking-[8px] sm:tracking-[25px] uppercase text-2xl 
+}
+
+
+.myScroll::-webkit-scrollbar{
+    @apply w-2 h-2 hidden sm:block
+}
+
+
+.myScroll::-webkit-scrollbar-thumb{
+    @apply bg-main 
+}
+
+.myScrollTwo::-webkit-scrollbar{
+    @apply w-[6px] h-[6px] bg-secondary rounded-full 
+}
+.myScrollTwo::-webkit-scrollbar-thumb{
+    @apply bg-main rounded-full 
+}
+
+
+.myScrollThree::-webkit-scrollbar{
+    @apply w-[3px] h-[3px] 
+}
+
+.myScrollThree::-webkit-scrollbar-thumb{
+    @apply bg-main rounded-full 
 }

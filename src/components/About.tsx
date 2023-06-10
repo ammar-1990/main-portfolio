@@ -23,7 +23,7 @@ const About = (props: Props) => {
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
-          viewport={{once:true}}
+        
 
           className="w-[250px] lg:w-[450px] flex-shrink-0"
         >
@@ -32,7 +32,7 @@ const About = (props: Props) => {
 
         <div className="text-center sm:text-start space-y-3">
           <h2 className="text-xl font-semibold ">A little aboute me</h2>
-          <p className="text-xs   max-w-[500px] sm:max-w-[475px] text-justify sm:h-auto h-[150px] overflow-y-scroll sm:overflow-auto">
+          <p className="text-xs   max-w-[500px] sm:max-w-[475px] text-justify sm:h-auto h-[150px] overflow-y-scroll sm:overflow-auto myScrollThree px-2">
             I am a <span className="text-main font-semibold">MERN full-stack </span>and <span className='text-main font-semibold'>mobile cross platform </span> developer with expertise in  Next.js and React
             Native.<br/> I have a strong track record of building
             complex websites, including e-commerce platforms with product

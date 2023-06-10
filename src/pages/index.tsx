@@ -7,12 +7,14 @@ import About from '@/components/About'
 import Services from '@/components/Services'
 import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
+import { Certificate } from 'crypto'
+import Certifications from '@/components/Certifications'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-  <div className='snap-y snap-mandatory  bg-[rgb(36,36,36)] h-screen  text-white overflow-y-scroll overflow-x-hidden scroll-smooth'>
+  <div className='snap-y snap-mandatory  bg-[rgb(36,36,36)] h-screen  text-white overflow-y-scroll overflow-x-hidden scroll-smooth myScroll'>
 
 
     <Head>
@@ -37,6 +39,10 @@ export default function Home() {
 
 {/* skills */}
 <Skills />
+
+{/* certifications */}
+
+<Certifications />
 
 
 {/* projects */}
