@@ -69,7 +69,7 @@ const ServiceCard = ({ title, services, lottie, images ,small }: Props) => {
              md:w-12 md:h-12 w-9 h-9 rounded-full p-3 hover:scale-110 duration-300 cursor-pointer  bg-white flex items-center justify-center`}
               key={i}
             >
-              <img src={el} className="w-full" />
+              <img src={el} className="w-full" alt="skill" />
             </div>
           ))}
         </div>:<div className="md:h-12 h-9 p-3  my-2 md:my-6 "/>}

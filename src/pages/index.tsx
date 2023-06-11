@@ -46,7 +46,11 @@ export default function Home() {
 
 
 {/* projects */}
+<div className='relative'>
 <Projects />
+<div className="absolute w-screen top-[35%]  bg-main/10 h-[300px] -skew-y-12" />
+</div>
+
 
 
 

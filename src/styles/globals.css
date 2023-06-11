@@ -26,7 +26,7 @@
 }
 
 .myScrollTwo::-webkit-scrollbar{
-    @apply w-[6px] h-[6px] bg-secondary rounded-full 
+    @apply w-[10px] h-[10px] bg-secondary rounded-full 
 }
 .myScrollTwo::-webkit-scrollbar-thumb{
     @apply bg-main rounded-full 
