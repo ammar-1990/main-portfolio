@@ -5,7 +5,7 @@ type Props = {}
 
 const Projects = (props: Props) => {
   return (
-    <section  id='projects' className='section relative flex flex-col pb-5'>
+    <section  id='projects' className='section relative flex flex-col pb-5 px-3'>
 
       <h1 className='title'>projects</h1>
       <div className=' overflow-x-scroll flex flex-1 snap-x snap-mandatory w-full mt-8 gap-6 pb-3 myScrollTwo px-4'>

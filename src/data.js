@@ -470,7 +470,7 @@ export const certificates = [
       img: "/Images/fiverr.png",
       pull: true,
       overView:
-        "full-stack Fiverr clone using the MERN stack, featuring user registration and authentication with JWT and cookies, gig creation and order placement, and messaging between buyers and sellers. The application included gig filtering and search capabilities to help users find the services they need.The front-end of the application was built using React, and the back-end was implemented using Node.js and Express. MongoDB was used for data storage and retrieval. JSON Web Tokens (JWT) and cookies were used for user authentication and security. Throughout the project, I gained valuable experience in developing a full-stack web application and working with technologies such as React, Node.js, Express, MongoDB, and JWT. I also learned about the importance of user authentication and security in web applications, and how to implement these features using JWT and cookies.",
+        "Full-stack Fiverr clone using the MERN stack, featuring user registration and authentication with JWT and cookies, gig creation and order placement, and messaging between buyers and sellers. The application included gig filtering and search capabilities to help users find the services they need.The front-end of the application was built using React, and the back-end was implemented using Node.js and Express. MongoDB was used for data storage and retrieval. JSON Web Tokens (JWT) and cookies were used for user authentication and security. Throughout the project, I gained valuable experience in developing a full-stack web application and working with technologies such as React, Node.js, Express, MongoDB, and JWT. I also learned about the importance of user authentication and security in web applications, and how to implement these features using JWT and cookies.",
       techStack: [
         "MONGO DB",
         "REACT JS",
@@ -488,7 +488,7 @@ export const certificates = [
       img: "/Images/alpha.png",
       pull: false,
       overView:
-        "real-time chat application with WebSocket. The application allows users to register, log in, and send instant messages to other users in real-time. Using React for the frontend, Node.js and Express for the backend, and MongoDB for the database, I developed a responsive and user-friendly chat interface that enables easy communication between users. The WebSocket technology ensures that messages are delivered instantly and without delay. To ensure secure user authentication, I implemented a robust login and registration system using JSON Web Tokens (JWT) for user authorization. This feature ensures that only authenticated users can access the chat system.",
+        "Real-time chat application with WebSocket. The application allows users to register, log in, and send instant messages to other users in real-time. Using React for the frontend, Node.js and Express for the backend, and MongoDB for the database, I developed a responsive and user-friendly chat interface that enables easy communication between users. The WebSocket technology ensures that messages are delivered instantly and without delay. To ensure secure user authentication, I implemented a robust login and registration system using JSON Web Tokens (JWT) for user authorization. This feature ensures that only authenticated users can access the chat system.",
       techStack: [
         "MONGO DB",
         "REACT JS",
@@ -522,7 +522,7 @@ export const certificates = [
     },
     {
       id: "23",
-      name: "NEXT E_COMMERCE DASHBOARD",
+      name: "NEXT js E_COMMERCE DASHBOARD",
       img: "/Images/next-dashboard.png",
       pull: false,
       overView:
@@ -539,7 +539,7 @@ export const certificates = [
     },
     {
       id: "24",
-      name: "NEXT E_COMMERCE WEBSITE",
+      name: "NEXT js E_COMMERCE WEBSITE",
       img: "/Images/next-ecommerce-front.png",
       pull: true,
       overView:
