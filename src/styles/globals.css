@@ -40,3 +40,8 @@
 .myScrollThree::-webkit-scrollbar-thumb{
     @apply bg-main rounded-full 
 }
+
+
+.input{
+    @apply p-2 bg-[#272727] text-white rounded-md text-sm outline-none
+}

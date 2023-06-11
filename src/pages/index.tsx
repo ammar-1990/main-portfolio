@@ -9,6 +9,7 @@ import Skills from '@/components/Skills'
 import Projects from '@/components/Projects'
 import { Certificate } from 'crypto'
 import Certifications from '@/components/Certifications'
+import Contact from '@/components/Contact'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -50,6 +51,10 @@ export default function Home() {
 <Projects />
 <div className="absolute w-screen top-[35%]  bg-main/10 h-[300px] -skew-y-12" />
 </div>
+
+
+{/* contact */}
+<Contact />
 
 
 

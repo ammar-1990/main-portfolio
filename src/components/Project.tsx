@@ -32,7 +32,7 @@ const Project = ({
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div className="w-full flex py-20 items-center flex-col flex-shrink-0 snap-center gap-7 relative z-20">
+    <div className="w-full flex pt-8 items-center justify-center flex-col flex-shrink-0 snap-center gap-2 relative z-20">
       {openModal && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-[100]">
           <div
@@ -73,8 +73,8 @@ const Project = ({
       <motion.div
         initial={{y:-150,opacity:0}}
         whileInView={{y:0,opacity:1}}
-        transition={{duration:1}}
-        className="p-2 bg-[rgb(19,19,19)] rounded-md group cursor-pointer"
+        transition={{duration:1,delay:0.1}}
+        className="p-2 bg-[rgb(19,19,19)] rounded-lg group cursor-pointer border border-white"
         >
             
       <div
@@ -83,7 +83,7 @@ const Project = ({
         <img
           src={img}
           alt="project"
-          className={`w-[350px] ${!pull && "object-contain h-full"} ${pull&& " group-hover:translate-y-[-70%] group-hover:duration-[4s] "} duration-[1s] ease-linear   `}
+          className={`w-[550px] ${!pull && "object-contain h-full"} ${pull&& " group-hover:translate-y-[-70%] group-hover:duration-[4s] "} duration-[1s] ease-linear   `}
         />
       </div>
       </motion.div>
