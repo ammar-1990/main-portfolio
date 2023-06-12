@@ -1,12 +1,20 @@
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import programmer from "../../public/programmer.json";
+import { RefObject, useEffect } from "react";
+import {useIntersectionObserver} from '../hooks/useIntersecting'
 
-type Props = {};
+type Props = { setTheHash:React.Dispatch<React.SetStateAction<string>> };
 
-const About = (props: Props) => {
+const About = ({setTheHash}: Props) => {
+  const [ref, isIntersecting] = useIntersectionObserver({ threshold: 0.5 });
+  useEffect(()=>{
+    if(isIntersecting)
+  {  window.history.pushState(null, "", `#${'about'}`);
+    setTheHash('about')}
+  },[isIntersecting])
   return (
-    <section
+    <section ref={ref}
     
       id="about"
       className="section "

@@ -1,12 +1,20 @@
 import { TrophyIcon } from "@heroicons/react/24/solid";
 import { certificates } from "@/data";
 import Certificate from "./Certificate";
+import { RefObject, useEffect } from "react";
+import {useIntersectionObserver} from '../hooks/useIntersecting'
 
-type Props = {};
+type Props = {setTheHash:React.Dispatch<React.SetStateAction<string>>  };
 
-const Certifications = (props: Props) => {
+const Certifications = ({setTheHash}: Props) => {
+  const [ref, isIntersecting] = useIntersectionObserver({ threshold: 0.5 });
+  useEffect(()=>{
+    if(isIntersecting)
+  {  window.history.pushState(null, "", `#${'certifications'}`);
+    setTheHash('certifications')}
+  },[isIntersecting])
   return (
-    <section id="certifications" className="section flex flex-col pb-5 relative px-4">
+    <section ref={ref} id="certifications" className="section flex flex-col pb-5 relative px-4">
         <div className="absolute inset-0  flex items-center justify-center z-[0]">
           <TrophyIcon className="text-main h-[600px] opacity-10 flexs" />
         </div>

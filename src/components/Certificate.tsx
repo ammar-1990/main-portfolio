@@ -4,7 +4,8 @@ type Props = {
     name:string,
     icon:string,
     image:string,
-    link:string
+    link:string,
+    
 }
 import Link from 'next/link'
 const Certificate = ({name,icon,image,link}: Props) => {
@@ -18,7 +19,7 @@ const Certificate = ({name,icon,image,link}: Props) => {
     <div className='absolute inset-0 bg-main opacity-0 group-hover:opacity-90 flex items-center justify-center rounded-md duration-[0.3s] ease-in-out '>
         <p className='text-white font-semibold'>More info</p>
     </div>
-    <div className="absolute w-9 h-9 sm:w-12 sm:h-12 bg-white rounded-full -top-2 -left-2">  <img src={icon} className="w-full h-full object-contain" /></div>
+    <div className="absolute w-9 h-9 sm:w-12 sm:h-12 bg-white rounded-full -top-2 -left-2">  <img src={icon} className="w-full h-full object-contain "  alt='certificate'/></div>
   
     <img src={image} alt=""  className=" w-[350px] md:w-[600px] aspect-video object-cover rounded-md "/>
 

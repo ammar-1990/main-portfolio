@@ -7,9 +7,12 @@ import Spinner from "./Spinner";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-type Props = {};
+import {useIntersectionObserver} from '../hooks/useIntersecting'
+import { useEffect } from "react"
 
-const Contact = (props: Props) => {
+type Props = { setTheHash:React.Dispatch<React.SetStateAction<string>> };
+
+const Contact = ({setTheHash}: Props) => {
   const formRef = useRef<HTMLFormElement | null>(null);
 
   type Inputs = {
@@ -77,8 +80,22 @@ const Contact = (props: Props) => {
         );
   };
 
+
+
+  const [ref, isIntersecting] = useIntersectionObserver({ threshold: 0.5 });
+
+
+  useEffect(()=>{
+    if(isIntersecting)
+    window.history.pushState(null, "", `#contact`);
+    setTheHash('contact')
+  },[isIntersecting])
+
+
+
   return (
     <section
+    ref={ref}
       className="section px-4 flex flex-col items-center gap-5 "
       id="contact"
     >

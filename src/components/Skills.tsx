@@ -1,12 +1,26 @@
+import {useIntersectionObserver} from '../hooks/useIntersecting'
+import { useEffect } from "react"
 import { skills } from "../data";
 import Skill from "./Skill";
 import {motion} from 'framer-motion'
 
-type Props = {};
+type Props = { setTheHash:React.Dispatch<React.SetStateAction<string>>};
 
-const Skills = (props: Props) => {
+const Skills = ({setTheHash}: Props) => {
+
+
+  const [ref, isIntersecting] = useIntersectionObserver({ threshold: 0.5 });
+
+
+  useEffect(()=>{
+    if(isIntersecting)
+   { window.history.pushState(null, "",  `#${'skills'}`);
+    setTheHash('skills')}
+  },[isIntersecting])
+
+
   return (
-    <section id="skills" className="section">
+    <section ref={ref} id="skills" className="section" >
       <h1 className="title">skills</h1>
 
       <p className="text-center text-secondary text-xs mt-5 uppercase">Move the mouse over the icons to see progress</p>

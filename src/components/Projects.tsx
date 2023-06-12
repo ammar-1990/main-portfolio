@@ -1,11 +1,24 @@
 import { projects } from "@/data"
 import Project from "./Project"
+import { RefObject, useEffect } from "react"
+import {useIntersectionObserver} from '../hooks/useIntersecting'
+type Props = { setTheHash:React.Dispatch<React.SetStateAction<string>> }
 
-type Props = {}
+const Projects = ({setTheHash}: Props) => {
 
-const Projects = (props: Props) => {
+  const [ref, isIntersecting] = useIntersectionObserver({ threshold: 0.9 });
+
+
+
+
+  useEffect(()=>{
+    if(isIntersecting)
+   { window.history.pushState(null, "", `#projects`);
+    setTheHash('projects')}
+  },[isIntersecting])
+
   return (
-    <section  id='projects' className='section relative flex flex-col pb-5 px-3'>
+    <section  ref={ref} id='projects' className='section relative flex flex-col pb-5 px-3'>
 
       <h1 className='title'>projects</h1>
       <div className=' overflow-x-scroll flex flex-1 snap-x snap-mandatory w-full mt-8 gap-12 pb-3 myScrollTwo px-4'>
