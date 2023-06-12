@@ -27,6 +27,7 @@ const [text,count] = useTypewriter({
        <Link href={'#skills'}> <button type='button' className='heroButton'>Skills</button></Link>    
        <Link href={'#certifications'}> <button type='button' className='heroButton'>Certifications</button></Link>    
        <Link href={'#projects'}><button type='button' className='heroButton'>Projects</button></Link>     
+       <Link href={'#contact'}><button type='button' className='heroButton'>Contact</button></Link>     
         </div>
     </section>
   )

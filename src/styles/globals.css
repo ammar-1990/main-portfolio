@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .heroButton{
-    @apply border px-2 sm:px-6 py-2 border-[#242424] rounded-full uppercase tracking-widest text-xs text-secondary hover:border-main hover:text-main duration-150
+    @apply border px-2 sm:px-6 py-2 border-[#242424] rounded-full uppercase tracking-widest text-xs text-secondary hover:border-main hover:text-main duration-150 active:scale-95
 }
 
 
@@ -43,5 +43,5 @@
 
 
 .input{
-    @apply p-2 bg-[#272727] text-white rounded-md text-sm outline-none
+    @apply p-2 bg-slate-400/10 text-white rounded-sm text-sm outline-none border-b border-[#242424] focus:border-main/40 focus:text-main/40 focus:font-semibold duration-300 hover:border-main/40
 }

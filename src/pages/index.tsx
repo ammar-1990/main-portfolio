@@ -10,13 +10,14 @@ import Projects from '@/components/Projects'
 import { Certificate } from 'crypto'
 import Certifications from '@/components/Certifications'
 import Contact from '@/components/Contact'
+import { Toaster } from 'react-hot-toast';
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
   <div className='snap-y snap-mandatory  bg-[rgb(36,36,36)] h-screen  text-white overflow-y-scroll overflow-x-hidden scroll-smooth myScroll'>
-
+  <Toaster />
 
     <Head>
       <title>

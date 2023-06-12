@@ -478,6 +478,7 @@ export const certificates = [
         "NODE JS",
         "TAILWIND",
         "JWT",
+        "REACT QUERY"
       ],
       demo: "https://inspiring-cranachan-f783e0.netlify.app/",
       code: "https://github.com/ammar-1990/fiverr-frontend",

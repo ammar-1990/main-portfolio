@@ -2,9 +2,7 @@ import { EyeIcon } from "@heroicons/react/24/outline";
 import { CodeBracketIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState } from "react";
-import {motion} from 'framer-motion'
-
-
+import { motion } from "framer-motion";
 
 type Props = {
   name: string;
@@ -39,11 +37,14 @@ const Project = ({
             className="w-[350px] md:w-[700px] bg-[rgb(36,36,36)]
  rounded-lg md:p-10 p-6 text-justify relative z-[100]"
           >
-            <h1 className="text-white capitalize py-2 text-center">   {name.replace("_", " ").toLowerCase().replace("mern", "MERN")}</h1>
+            <h1 className="text-white capitalize py-2 text-center">
+              {" "}
+              {name.replace("_", " ").toLowerCase().replace("mern", "MERN")}
+            </h1>
             <button
               type="button"
               onClick={() => setOpenModal(false)}
-              className="absolute top-0 right-0 text-xs rounded-tr-md rounded-bl-md bg-main text-white p-1 sm:p-2"
+              className="absolute top-0 right-0 text-xs rounded-tr-md rounded-bl-md bg-main text-white p-1 sm:p-2 duration-300 hover:bg-red-800"
             >
               X
             </button>
@@ -57,11 +58,21 @@ const Project = ({
               ))}
             </ul>
             <div className="flex items-center gap-5 mt-5">
-              <Link target="_blank" href={demo} className="px-3 bg-main text-white flex items-center gap-1 py-1 rounded-md text-xs">
+              <Link
+                target="_blank"
+                href={demo}
+                className="px-3 bg-main text-white flex items-center gap-1 py-1 rounded-md text-xs active:scale-95 duration-300 hover:bg-red-800"
+               
+              >
                 <EyeIcon className="h-5 text-white cursor-pointer   " />
                 Demo
               </Link>
-              <Link target="_blank" href={code} className="px-3 bg-main text-white flex items-center gap-1 py-1 rounded-md text-xs" >
+              <Link
+                target="_blank"
+                href={code}
+                className="px-3 bg-main text-white flex items-center gap-1 py-1 rounded-md text-xs active:scale-95 duration-300 hover:bg-red-800"
+               
+              >
                 <CodeBracketIcon className="h-5 text-white cursor-pointer   " />
                 Code
               </Link>
@@ -71,23 +82,22 @@ const Project = ({
       )}
 
       <motion.div
-        initial={{y:-150,opacity:0}}
-        whileInView={{y:0,opacity:1}}
-        transition={{duration:1,delay:0.1}}
+        initial={{ y: -150, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1, delay: 0.1 }}
         className="p-2 bg-[rgb(19,19,19)] rounded-lg group cursor-pointer border border-white"
-        >
-            
-      <div
-    
-      className=" aspect-video overflow-hidden ">
-        <img
-          src={img}
-          alt="project"
-          className={`w-[550px] ${!pull && "object-contain h-full"} ${pull&& " group-hover:translate-y-[-70%] group-hover:duration-[4s] "} duration-[1s] ease-linear   `}
-        />
-      </div>
+      >
+        <div className=" aspect-video overflow-hidden ">
+          <img
+            src={img}
+            alt="project"
+            className={`w-[550px] ${!pull && "object-contain h-full"} ${
+              pull &&
+              " group-hover:translate-y-[-70%] group-hover:duration-[4s] "
+            } duration-[1s] ease-linear   `}
+          />
+        </div>
       </motion.div>
-   
 
       <p>
         {order} of {length}
@@ -95,10 +105,10 @@ const Project = ({
       <h1 className="text-sm text-center capitalize">
         {name.replace("_", " ").toLowerCase().replace("mern", "MERN")}
       </h1>
-  
+
       <button
         type="button"
-        className="text-main border-main px-6 py-1 uppercase tracking-widest text-xs  border rounded-full"
+        className=" border-main px-6 py-1 uppercase tracking-widest text-xs text-white bg-main  border rounded-full duration-300 hover:bg-red-800 active:scale-95 "
         onClick={() => setOpenModal(true)}
       >
         More info
