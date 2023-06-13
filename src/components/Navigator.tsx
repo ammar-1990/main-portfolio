@@ -74,9 +74,9 @@ const Navigator = ({ theHash }: Props) => {
     <div
       className={`navigator cursor-pointer ${
         theHash !== "" && "opacity-100 pointer-events-auto"
-      } delay-300 opacity-0 pointer-events-none duration-500 fixed top-5 w-fit flex-col rounded-sm p-1 sm:px-3  ${
+      } delay-75 opacity-0 pointer-events-none duration-500 fixed top-5 w-fit flex-col rounded-sm p-1 sm:px-3  ${
         open && "gap-4  "
-      }  bg-main/40 text-white mx-auto flex justify-center items-center  left-0 right-0 z-50`}
+      }  bg-main/40 hover:bg-main/30 text-white mx-auto flex justify-center items-center  left-0 right-0 z-50`}
       onClick={() => setOpen((prev) => !prev)}
     >
     

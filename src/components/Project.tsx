@@ -32,7 +32,7 @@ const Project = ({
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div className="w-full flex pt-8 items-center justify-center flex-col flex-shrink-0 snap-center gap-2 relative z-20">
+    <div className="w-full flex pt-8 items-center justify-center flex-col flex-shrink-0 snap-center gap-2 relative z-20 snap-always">
       {openModal && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-[100]">
           <div
