@@ -11,9 +11,10 @@ import Link from 'next/link'
 const Certificate = ({name,icon,image,link}: Props) => {
   return (
     <motion.div 
-    initial={{opacity:0.1}}
-    whileInView={{opacity:1}}
-    transition={{duration:0.4,delay:0.4}}
+    viewport={{once:true}}
+    initial={{opacity:0,scale:0.8}}
+    whileInView={{opacity:1,scale:1}}
+    transition={{duration:0.4,delay:0.2}}
     className="w-full flex-shrink-0 snap-center flex items-center justify-center ">
 <Link href={link} target='_blank'><div className="bg-[rgb(36,36,36)] p-2 rounded-md relative cursor-pointer group active:scale-[0.99] duration-300">
     <div className='absolute inset-0 bg-main opacity-0 group-hover:opacity-90 flex items-center justify-center rounded-md duration-[0.3s] ease-in-out '>

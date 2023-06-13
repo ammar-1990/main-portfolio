@@ -74,14 +74,17 @@ const Navigator = ({ theHash }: Props) => {
     <div
       className={`navigator cursor-pointer ${
         theHash !== "" && "opacity-100 pointer-events-auto"
-      } delay-300 opacity-0 pointer-events-none duration-500 fixed top-5 w-fit flex-col rounded-sm p-1  ${
-        open && "gap-4"
+      } delay-300 opacity-0 pointer-events-none duration-500 fixed top-5 w-fit flex-col rounded-sm p-1 sm:px-3  ${
+        open && "gap-4 rounded-lg "
       }  bg-main/40 text-white mx-auto flex justify-center items-center  left-0 right-0 z-50`}
       onClick={() => setOpen((prev) => !prev)}
     >
+    
       <Bars3Icon
         className="navigator h-4 text-white   "
-        
+        onClick={(e) => 
+       {   e.stopPropagation();
+          setOpen((prev) => !prev)}}
       />
       <div
         className={`flex  gap-1 items-center ${

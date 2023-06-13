@@ -58,6 +58,7 @@ const ServiceCard = ({ title, services, lottie, images ,small }: Props) => {
       initial={{y:-200,opacity:0}}
       whileInView={{y:0,opacity:1}}
       transition={{duration:1.2}}
+      viewport={{once:true}}
        className={` w-52 h-52  flex items-center justify-center text-center mx-auto relative` }>
         <div className="w-36 h-36 rounded-full bg-white absolute" />
         <Lottie animationData={lottie}  className={`${small ? "w-32 h-32" : "w-52 h-52"}`} />

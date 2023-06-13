@@ -87,6 +87,7 @@ const Project = ({
         initial={{ y: -150, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1, delay: 0.1 }}
+      viewport={{once:true}}
         className="p-2 bg-[rgb(19,19,19)] rounded-lg group cursor-pointer border border-white"
       >
         <div className=" aspect-video overflow-hidden ">

@@ -24,6 +24,7 @@ const About = ({setTheHash}: Props) => {
         About
       </h1>
       <motion.div
+      viewport={{once:true}}
       initial={{opacity:0}}
       whileInView={{opacity:1}}
       transition={{duration:1.5}}
@@ -32,6 +33,7 @@ const About = ({setTheHash}: Props) => {
           initial={{ x: -200, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
+          viewport={{once:true}}
         
 
           className="w-[250px] lg:w-[450px] flex-shrink-0"

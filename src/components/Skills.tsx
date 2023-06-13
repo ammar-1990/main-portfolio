@@ -26,6 +26,7 @@ const Skills = ({setTheHash}: Props) => {
 
       <p className="text-center text-secondary text-xs mt-5 uppercase">Move the mouse over the icons to see progress</p>
       <motion.div 
+      viewport={{once:true}}
       initial={{x:-200,opacity:0}}
       whileInView={{x:[-190,-160,0],opacity:1}}
       transition={{duration:1.5}}
@@ -35,6 +36,7 @@ const Skills = ({setTheHash}: Props) => {
         ))}
       </motion.div>
       <motion.div
+      viewport={{once:true}}
       initial={{x:200,opacity:0}}
       whileInView={{x:[190,160,0],opacity:1}}
       transition={{duration:1.5}}
@@ -44,6 +46,7 @@ const Skills = ({setTheHash}: Props) => {
         ))}
       </motion.div>
       <motion.div 
+      viewport={{once:true}}
       initial={{x:-200,opacity:0}}
       whileInView={{x:[-190,-160,0],opacity:1}}
       transition={{duration:1.5}}
