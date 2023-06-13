@@ -13,7 +13,7 @@ const Skill = ({ img, level, name }: Props) => {
           {name}
         </p>
       </div>
-      <Image src={img} alt="skill" className="w-10 object-contain"   width={50} height={50}   priority={true}/>
+      <Image src={img} alt="skill" className="sm:w-10 w-8 object-contain"   width={50} height={50}   priority={true}/>
     </div>
   );
 };
