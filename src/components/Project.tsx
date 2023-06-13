@@ -96,7 +96,7 @@ const Project = ({
             alt="project"
             width={400}
             height={200}
-            priority
+            priority={true}
             className={`w-[500px] ${!pull && "object-contain h-full"} ${
               pull &&
               " group-hover:translate-y-[-70%] group-hover:duration-[4s] "

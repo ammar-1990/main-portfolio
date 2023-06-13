@@ -22,7 +22,7 @@ const Certificate = ({name,icon,image,link}: Props) => {
     </div>
     <div className="absolute w-9 h-9 sm:w-12 sm:h-12 bg-white rounded-full -top-2 -left-2">  <img src={icon} className="w-full h-full object-contain "  alt='certificate'/></div>
   
-    <Image src={image} alt="certificate" priority  className=" w-[350px] md:w-[500px] aspect-video object-cover rounded-md " width={400} height={200} />
+    <Image src={image} alt="certificate"   priority={true}  className=" w-[350px] md:w-[500px] aspect-video object-cover rounded-md " width={400} height={200} />
 
 
 </div>
