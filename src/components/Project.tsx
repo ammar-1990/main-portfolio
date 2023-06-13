@@ -90,7 +90,7 @@ const Project = ({
       viewport={{once:true}}
         className="p-2 bg-[rgb(19,19,19)] rounded-lg group cursor-pointer border border-white"
       >
-        <div className=" aspect-video overflow-hidden ">
+        <div className=" aspect-video overflow-hidden  ">
           <Image
             src={img}
             alt="project"

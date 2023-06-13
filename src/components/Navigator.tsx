@@ -75,7 +75,7 @@ const Navigator = ({ theHash }: Props) => {
       className={`navigator cursor-pointer ${
         theHash !== "" && "opacity-100 pointer-events-auto"
       } delay-300 opacity-0 pointer-events-none duration-500 fixed top-5 w-fit flex-col rounded-sm p-1 sm:px-3  ${
-        open && "gap-4 rounded-lg "
+        open && "gap-4  "
       }  bg-main/40 text-white mx-auto flex justify-center items-center  left-0 right-0 z-50`}
       onClick={() => setOpen((prev) => !prev)}
     >
@@ -87,19 +87,20 @@ const Navigator = ({ theHash }: Props) => {
           setOpen((prev) => !prev)}}
       />
       <div
-        className={`flex  gap-1 items-center ${
-          !open ? "w-0 h-0 " : " w-[195px] h-10"
+        className={`flex  gap-1 items-center justify-center  ${
+          !open ? "w-0 h-0 " : " w-[210px] h-12"
         } overflow-hidden duration-300`}
       >
         {tabs.map(({ Icon, to, name }, i) => (
           <Link
             onClick={() => setOpen(false)}
             key={i}
-            className={`${
+            className={`flex justify-center group relative ${
               theHash === name && "text-red-600 bg-white  "
-            }block  hover:bg-white/20 duration-300 rounded-full p-1`}
+            }block  hover:bg-white/20 duration-300 rounded-full p-1 `}
             href={to}
           >
+            <span className="absolute top-0 opacity-0 capitalize group-hover:-top-4 text-xs group-hover:opacity-100 duration-300 pointer-events-none text-white ">{name==='' ? 'hero' : name}</span>
             {<Icon className=" h-4" />}
           </Link>
         ))}
