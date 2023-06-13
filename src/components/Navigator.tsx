@@ -96,8 +96,8 @@ const Navigator = ({ theHash }: Props) => {
             onClick={() => setOpen(false)}
             key={i}
             className={`${
-              theHash === name && "text-red-600 bg-white rounded-full "
-            }block ${open && "p-1"}`}
+              theHash === name && "text-red-600 bg-white  "
+            }block  hover:bg-white/20 duration-300 rounded-full p-1`}
             href={to}
           >
             {<Icon className=" h-4" />}
