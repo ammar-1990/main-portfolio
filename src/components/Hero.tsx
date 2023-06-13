@@ -30,7 +30,7 @@ const [text,count] = useTypewriter({
 
 
   return (
-    <section ref={ref}  id="hero" className='h-screen  flex items-center flex-col justify-center  snap-center relative'>
+    <section ref={ref}  id="hero" className='h-screen  flex items-center flex-col justify-center  snap-center relative overflow-hidden'>
         <Circles />
         <Image src={'/images/logo.png'} width={300} height={250}   priority={true}  alt='logo' className=' w-[75px] md:w-[125px] mt-32'/>
         <h2 className='mt-4 text-secondary tracking-[15px] uppercase text-xs sm:text-base -mr-[15px]'>Web Developer</h2>
