@@ -3,6 +3,7 @@ import { certificates } from "@/data";
 import Certificate from "./Certificate";
 import { RefObject, useEffect } from "react";
 import {useIntersectionObserver} from '../hooks/useIntersecting'
+import React from "react";
 
 type Props = {setTheHash:React.Dispatch<React.SetStateAction<string>>  };
 
@@ -34,4 +35,4 @@ const Certifications = ({setTheHash}: Props) => {
   );
 };
 
-export default Certifications;
+export default React.memo(Certifications);

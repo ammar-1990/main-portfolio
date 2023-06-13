@@ -1,4 +1,5 @@
 type Props = { img: string; level: string; name: string };
+import Image from "next/image";
 
 const Skill = ({ img, level, name }: Props) => {
   return (
@@ -12,7 +13,7 @@ const Skill = ({ img, level, name }: Props) => {
           {name}
         </p>
       </div>
-      <img src={img} alt="skill" className="w-10 object-contain" />
+      <Image src={img} alt="skill" className="w-auto object-contain"  width={25} height={25} priority/>
     </div>
   );
 };

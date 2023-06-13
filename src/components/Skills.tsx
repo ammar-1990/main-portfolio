@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { skills } from "../data";
 import Skill from "./Skill";
 import {motion} from 'framer-motion'
+import React from "react";
 
 type Props = { setTheHash:React.Dispatch<React.SetStateAction<string>>};
 
@@ -55,4 +56,4 @@ const Skills = ({setTheHash}: Props) => {
   );
 };
 
-export default Skills;
+export default React.memo(Skills);

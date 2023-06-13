@@ -6,6 +6,7 @@ import toast from "react-hot-toast";
 import Spinner from "./Spinner";
 import { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import React from "react";
 
 import {useIntersectionObserver} from '../hooks/useIntersecting'
 import { useEffect } from "react"
@@ -167,4 +168,4 @@ const Contact = ({setTheHash}: Props) => {
   );
 };
 
-export default Contact;
+export default React.memo(Contact);

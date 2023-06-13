@@ -2,6 +2,7 @@ import ServiceCard from "./ServiceCard"
 import {services} from '../data'
 import {useIntersectionObserver} from '../hooks/useIntersecting'
 import { useEffect } from "react"
+import React from "react";
 
 type Props = { setTheHash:React.Dispatch<React.SetStateAction<string>> }
 
@@ -29,4 +30,4 @@ const Services = ({setTheHash}: Props) => {
   )
 }
 
-export default Services
+export default React.memo(Services)

@@ -2,17 +2,21 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
 import Header from '@/components/Header'
-import Hero from '@/components/Hero'
-import About from '@/components/About'
-import Services from '@/components/Services'
-import Skills from '@/components/Skills'
-import Projects from '@/components/Projects'
-import { Certificate } from 'crypto'
-import Certifications from '@/components/Certifications'
-import Contact from '@/components/Contact'
+import dynamic from 'next/dynamic'
+import { Suspense } from 'react'
+
+const Hero = dynamic(()=>import('@/components/Hero'))
+const About = dynamic(()=>import('@/components/About'))
+const Services = dynamic(()=>import('@/components/Services'))
+const Skills = dynamic(()=>import('@/components/Skills'))
+const Projects = dynamic(()=>import('@/components/Projects'))
+const Certifications = dynamic(()=>import('@/components/Certifications'))
+const Contact = dynamic(()=>import('@/components/Contact'))
+
+
 import { Toaster } from 'react-hot-toast';
 import Navigator from '@/components/Navigator'
-import { useState } from 'react'
+import { useState,lazy } from 'react'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,7 +29,7 @@ const [theHash,setTheHash] = useState('')
 
 
   return (
-  <div className='snap-y snap-mandatory  bg-[rgb(36,36,36)] h-screen  text-white overflow-y-scroll overflow-x-hidden scroll-smooth myScroll'>
+  <div className='theMain snap-y snap-mandatory  bg-[rgb(36,36,36)] h-screen  text-white overflow-y-scroll overflow-x-hidden scroll-smooth myScroll'>
   <Toaster />
 <Navigator theHash={theHash} />
     <Head>
@@ -39,7 +43,10 @@ const [theHash,setTheHash] = useState('')
    <Header />
 
 {/* hero */}
+
 <Hero setTheHash={setTheHash} />
+
+
 
 
 {/* about */}
@@ -57,10 +64,13 @@ const [theHash,setTheHash] = useState('')
 
 
 {/* projects */}
+
 <div className='relative'>
 <Projects setTheHash={setTheHash}  />
 <div className="absolute w-screen top-[35%]  bg-main/10 h-[300px] -skew-y-12" />
 </div>
+
+
 
 
 {/* contact */}

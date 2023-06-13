@@ -3,6 +3,7 @@ import Lottie from "lottie-react";
 import programmer from "../../public/programmer.json";
 import { RefObject, useEffect } from "react";
 import {useIntersectionObserver} from '../hooks/useIntersecting'
+import React from "react";
 
 type Props = { setTheHash:React.Dispatch<React.SetStateAction<string>> };
 
@@ -65,4 +66,4 @@ const About = ({setTheHash}: Props) => {
   );
 };
 
-export default About;
+export default React.memo(About);

@@ -3,6 +3,7 @@ import { CodeBracketIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 
 type Props = {
@@ -89,10 +90,13 @@ const Project = ({
         className="p-2 bg-[rgb(19,19,19)] rounded-lg group cursor-pointer border border-white"
       >
         <div className=" aspect-video overflow-hidden ">
-          <img
+          <Image
             src={img}
             alt="project"
-            className={`w-[550px] ${!pull && "object-contain h-full"} ${
+            width={400}
+            height={200}
+            priority
+            className={`w-[500px] ${!pull && "object-contain h-full"} ${
               pull &&
               " group-hover:translate-y-[-70%] group-hover:duration-[4s] "
             } duration-[1s] ease-linear   `}
