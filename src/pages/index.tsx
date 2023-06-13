@@ -29,7 +29,7 @@ const [theHash,setTheHash] = useState('')
 
 
   return (
-  <div className='theMain snap-y snap-mandatory  bg-[rgb(36,36,36)] h-screen  text-white overflow-y-scroll overflow-x-hidden scroll-smooth myScroll'>
+  <div className='theMain snap-y snap-mandatory  bg-[rgb(36,36,36)] h-screen  text-white overflow-y-scroll overflow-x-hidden scroll-auto myScroll'>
   <Toaster />
 <Navigator theHash={theHash} />
     <Head>
