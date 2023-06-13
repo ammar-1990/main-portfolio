@@ -8,7 +8,7 @@
 
 
 .section{
-    @apply h-screen snap-start max-w-6xl mx-auto  pt-24 snap-always
+    @apply h-screen snap-start max-w-6xl mx-auto  pt-24 snap-always overflow-hidden
 }
 
 .title{

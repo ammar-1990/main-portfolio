@@ -21,7 +21,7 @@ const Skills = ({setTheHash}: Props) => {
 
 
   return (
-    <section ref={ref} id="skills" className="section" >
+    <section ref={ref} id="skills" className="section " >
       <h1 className="title">skills</h1>
 
       <p className="text-center text-secondary text-xs mt-5 uppercase">Move the mouse over the icons to see progress</p>
