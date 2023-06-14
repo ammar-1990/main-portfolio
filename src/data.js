@@ -112,6 +112,12 @@ export const skills = [
         img:'/images/skills/JS.png'
     },
     {
+        id:3,
+        name:'type script',
+        level:'70%',
+        img:'/images/skills/TypeScript.png'
+    },
+    {
         id:4,
         name:'react js',
         level:'90%',

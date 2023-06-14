@@ -53,7 +53,7 @@ type Props = {
 
 const ServiceCard = ({ title, services, lottie, images ,small }: Props) => {
   return (
-    <article className="w-[350px] md:w-[600px] xl:w-[900px] flex-shrink-0 snap-center py-5 px-10 bg-[#272727]  opacity-40 hover:opacity-95 rounded-lg cursor-pointer duration-300 overflow-hidden snap-always">
+    <article className="w-[350px] md:w-[600px] xl:w-[900px] flex-shrink-0 snap-center py-5 px-10 bg-[#272727]  md:opacity-40 md:hover:opacity-95 rounded-lg cursor-pointer duration-300 overflow-hidden snap-always">
       <motion.div
       initial={{y:-200,opacity:0}}
       whileInView={{y:0,opacity:1}}

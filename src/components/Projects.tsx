@@ -26,7 +26,7 @@ const Projects = ({setTheHash}: Props) => {
 
       <h1 className='title'>projects</h1>
       <div className=' overflow-x-scroll flex flex-1 snap-x snap-mandatory w-full mt-8 gap-12 pb-3 myScrollTwo px-4'>
-{[...projects].reverse().map((el,i)=><Suspense key={el.id} fallback={'loading'}><Project  order={i+1} name={el.name} img={el.img}  overView={el.overView} demo={el.demo} code={el.code} pull={el.pull} techStack={el.techStack} length={projects.length}/></Suspense>)}
+{[...projects].reverse().map((el,i)=><Suspense key={i} fallback={'loading'}><Project  order={i+1} name={el.name} img={el.img}  overView={el.overView} demo={el.demo} code={el.code} pull={el.pull} techStack={el.techStack} length={projects.length}/></Suspense>)}
       </div>
     </section>
   )

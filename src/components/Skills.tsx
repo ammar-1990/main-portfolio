@@ -30,9 +30,9 @@ const Skills = ({setTheHash}: Props) => {
       initial={{x:-200,opacity:0}}
       whileInView={{x:[-190,-160,0],opacity:1}}
       transition={{duration:1.5}}
-      className="grid grid-cols-4 mt-20 mx-auto max-w-[450px] gap-y-4 ">
-        {skills.slice(0, 8).map((el) => (
-         <Skill key={el.id} img={el.img} level={el.level} name={el.name} />
+      className="grid grid-cols-4 mt-10 mx-auto max-w-[450px] gap-y-4 ">
+        {skills.slice(0, 8).map((el,i) => (
+         <Skill key={i} img={el.img} level={el.level} name={el.name} />
         ))}
       </motion.div>
       <motion.div
@@ -41,8 +41,8 @@ const Skills = ({setTheHash}: Props) => {
       whileInView={{x:[190,160,0],opacity:1}}
       transition={{duration:1.5}}
        className="grid grid-cols-4 mt-4 mx-auto max-w-[450px] gap-y-4 ">
-        {skills.slice(8, 16).map((el) => (
-         <Skill key={el.id} img={el.img} level={el.level} name={el.name} />
+        {skills.slice(8, 16).map((el,i) => (
+         <Skill key={i+8} img={el.img} level={el.level} name={el.name} />
         ))}
       </motion.div>
       <motion.div 
@@ -51,8 +51,8 @@ const Skills = ({setTheHash}: Props) => {
       whileInView={{x:[-190,-160,0],opacity:1}}
       transition={{duration:1.5}}
       className="grid grid-cols-4 mt-4 mx-auto max-w-[450px] gap-y-4 ">
-        {skills.slice(16, 20).map((el) => (
-         <Skill key={el.id} img={el.img} level={el.level} name={el.name} />
+        {skills.slice(16, 21).map((el,i) => (
+         <Skill key={i+16} img={el.img} level={el.level} name={el.name} />
         ))}
       </motion.div>
     </section>
