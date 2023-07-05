@@ -529,8 +529,34 @@ export const projects = [
     pull: true,
     overView:
       "Airbnb clone built with Next.js, Prisma, Next-auth, and MongoDB. This project is a culmination of my skills in full-stack web development, database management, and user authentication. With this Airbnb clone, users can register, login, and logout, add properties, make reservations, and view properties. The website is fast, responsive, and user-friendly, with a great interface that allows users to filter properties according to date range, price, guests counts, and rooms count.",
-    techStack: ["MONGO DB", "NEXT JS", "TAILWIND JS", "PRISMA", "ZUSTAND","DATE-RANGE"],
+    techStack: [
+      "MONGO DB",
+      "NEXT JS",
+      "TAILWIND JS",
+      "PRISMA",
+      "ZUSTAND",
+      "DATE-RANGE",
+    ],
     demo: "https://next13-fullstack-airbnb.vercel.app/",
     code: "https://github.com/ammar-1990/next13-fullstack-airbnb",
+  },
+  {
+    id: "26",
+    name: "TWITTER CLONE NEXT13 FULLSTACK",
+    img: "/images/twitter.png",
+    pull: false,
+    overView:
+      " full-stack Twitter clone using Next.js 13, NextAuth, and Prisma with MongoDB. The Twitter clone has a range of features that make it a fully functional social media platform, including user authentication and authorization, the ability to create new tweets, like and comment on tweets, and follow other users. The platform also includes notifications to keep users informed about various activities, providing a seamless and engaging user experience.",
+    techStack: [
+      "MONGO DB",
+      "NEXT JS",
+      "TAILWIND JS",
+      "PRISMA",
+      "ZUSTAND",
+      "DATE-RANGE",
+      "NEXT_AUTH",
+    ],
+    demo: "https://twit-clone-three.vercel.app/",
+    code: "https://github.com/ammar-1990/next13-twitter-clone",
   },
 ];
