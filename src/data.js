@@ -559,4 +559,24 @@ export const projects = [
     demo: "https://twit-clone-three.vercel.app/",
     code: "https://github.com/ammar-1990/next13-twitter-clone",
   },
+  {
+    id: "27",
+    name: "WHATSAPP CLONE NEXT13 FULLSTACK",
+    img: "/images/whatsapp-next13.png",
+    pull: false,
+    overView:
+      " WhatsApp clone built using Next.js, PostgreSQL, Prisma, Tailwind CSS, Socket.io, TypeScript, Wavesurfer, and Zego Express Engine WebRTC. This project demonstrates my expertise in developing real-time communication applications",
+    techStack: [
+      "POSTGRESQL",
+      "NEXT JS",
+      "TAILWIND JS",
+      "PRISMA",
+      "WAVESURFER",
+      "SOCKET.IO",
+      "ZEGO-WEB-RTC",
+      "NEXT_AUTH",
+    ],
+    demo: "https://next-13-whatsapp-full-stack.vercel.app/",
+    code: "https://github.com/ammar-1990/next-13-whatsapp-full-stack",
+  },
 ];
