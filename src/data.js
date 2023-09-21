@@ -28,6 +28,10 @@ export const services = [
       "Build scalable and secure RESTful APIs using Node.js, Express, and MongoDB.",
       "Implement authentication and authorization systems using industry-standard protocols such as OAuth2 and JWT.",
       "Develop serverless applications using AWS Lambda and API Gateway.",
+      "Smart Contract Development",
+      "Decentralized Application (DApp) Development",
+      "Web3 Integration",
+      "Smart Contract Auditing"
     ],
     lottie: backend,
     images: [
@@ -92,7 +96,7 @@ export const skills = [
   {
     id: 3,
     name: "type script",
-    level: "70%",
+    level: "75%",
     img: "/images/skills/TypeScript.png",
   },
   {
@@ -157,9 +161,9 @@ export const skills = [
   },
   {
     id: 14,
-    name: "wordporess",
+    name: "prisma",
     level: "75%",
-    img: "/images/skills/wordpress.png",
+    img: "/images/skills/prisma.png",
   },
   {
     id: 15,
@@ -196,6 +200,24 @@ export const skills = [
     name: "react native",
     level: "75%",
     img: "/images/skills/native.png",
+  },
+  {
+    id: 21,
+    name: "solidity",
+    level: "75%",
+    img: "/images/skills/solidity.png",
+  },
+  {
+    id: 22,
+    name: "ethers js",
+    level: "75%",
+    img: "/images/skills/ethers.png",
+  },
+  {
+    id: 23,
+    name: "hard hat",
+    level: "75%",
+    img: "/images/skills/hardhat.png",
   },
 ];
 

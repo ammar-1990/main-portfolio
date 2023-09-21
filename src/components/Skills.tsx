@@ -51,7 +51,7 @@ const Skills = ({setTheHash}: Props) => {
       whileInView={{x:[-190,-160,0],opacity:1}}
       transition={{duration:1.5}}
       className="grid grid-cols-4 mt-4 mx-auto max-w-[450px] gap-y-4 ">
-        {skills.slice(16, 21).map((el,i) => (
+        {skills.slice(16, 24).map((el,i) => (
          <Skill key={i+16} img={el.img} level={el.level} name={el.name} />
         ))}
       </motion.div>

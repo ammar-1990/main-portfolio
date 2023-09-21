@@ -21,7 +21,7 @@ const Hero = ({setTheHash}: Props) => {
   },[isIntersecting])
 
 const [text,count] = useTypewriter({
-    words:["Hi, I'm Ammar","Full-stack developer","React native cross platform developer"],
+    words:["Hi, I'm Ammar","Full-stack developer","React native cross platform developer","Block-chain Developer "],
     loop:true,
     delaySpeed:2000,
     deleteSpeed:35
