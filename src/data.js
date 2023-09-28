@@ -601,4 +601,19 @@ export const projects = [
     demo: "https://next-13-whatsapp-full-stack.vercel.app/",
     code: "https://github.com/ammar-1990/next-13-whatsapp-full-stack",
   },
+  {
+    id: "27",
+    name: "CANVA PROJECT",
+    img: "/images/canva.png",
+    pull: false,
+    overView:
+      "Using this tool, users can unleash their creativity and design stunning compositions with ease. The project offers a range of features, including : 1- Adding Static Shapes: Users can effortlessly add shapes like rectangles, circles, and triangles to their canvas. These shapes can be customized by modifying their sizes and colors, allowing for endless possibilities."+
+      "2-Moving and Resizing: The tool empowers users to freely move and resize the shapes on the canvas, giving them full control over the arrangement and composition of their designs."+"3- Image Integration: Users can upload their own images or choose from a library of pre-existing images to incorporate into their designs. This feature adds a whole new dimension to their creative process.4- Textual Elements: The tool supports adding text to the canvas, allowing users to create visually appealing typography-based designs. They can customize the font, size, color, and positioning of the text elements.5-Layering and Manipulation: Each component added to the canvas is displayed as a separate layer, allowing users to easily manage the order of elements. They have the ability to copy, paste, and delete any component, providing flexibility and streamlining the design workflow.",
+    techStack: [
+      'REACT.JS',
+      "TAILWIND"
+    ],
+    demo: "https://canva-project.vercel.app/",
+    code: "https://github.com/ammar-1990/canva-project",
+  },
 ];
