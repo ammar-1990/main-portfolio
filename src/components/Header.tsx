@@ -23,7 +23,7 @@ function Header({}: Props) {
         <Link href={"https://www.linkedin.com/in/ammar-haidar-569344223"}>
           <FaLinkedinIn size={20} color="gray" />
         </Link>
-        <Link href={"/CV.pdf"} download={true} className="relative group">
+        <Link href={"/CV.pdf"} download={true} target="_blank" className="relative group">
           <HiOutlineDocument size={20} color="gray" />
           <span className="text-gray absolute group-hover:-top-4 top-0 left-1 group-hover:opacity-100 duration-300 text-xs  opacity-0">
             cv
