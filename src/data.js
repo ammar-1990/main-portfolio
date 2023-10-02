@@ -616,4 +616,28 @@ export const projects = [
     demo: "https://canva-project.vercel.app/",
     code: "https://github.com/ammar-1990/canva-project",
   },
+  {
+    id: "28",
+    name: "DISCORD-CLONE PROJECT",
+    img: "/images/discord.png",
+    pull: false,
+    overView:
+      "a full-stack Discord clone using cutting-edge technologies and frameworks ." + 
+      "Key features are : " +
+      " Register, log in, and log out functionality for secure user authentication."+
+"      Create servers and channels to organize conversations effectively."+
+      "Send messages in real-time to engage in dynamic discussions."+
+      "Direct messaging capability for private and one-on-one conversations."+
+      "Seamlessly upload files and images for easy sharing and collaboration."+
+      "Video and audio rooms powered by Livekit for immersive communication."+
+      "Utilized Next.js 13 and Tailwind CSS for a modern and responsive front-end design.",
+    techStack: [
+      'NEXT.JS',
+      "TAILWIND",
+      "LIVEKIT",
+      "CLERK"
+    ],
+    demo: "https://discord-clone-production-5d17.up.railway.app",
+    code: "https://github.com/ammar-1990/discord-clone",
+  },
 ];
