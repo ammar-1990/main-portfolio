@@ -622,15 +622,15 @@ export const projects = [
     img: "/images/discord.png",
     pull: false,
     overView:
-      "a full-stack Discord clone using cutting-edge technologies and frameworks ." + 
-      "Key features are : " +
-      " Register, log in, and log out functionality for secure user authentication."+
-"      Create servers and channels to organize conversations effectively."+
-      "Send messages in real-time to engage in dynamic discussions."+
-      "Direct messaging capability for private and one-on-one conversations."+
-      "Seamlessly upload files and images for easy sharing and collaboration."+
-      "Video and audio rooms powered by Livekit for immersive communication."+
-      "Utilized Next.js 13 and Tailwind CSS for a modern and responsive front-end design.",
+      "A full-stack Discord clone using cutting-edge technologies and frameworks ." + '\n'+
+      "Key features are : " +'\n'+
+      " -Register, log in, and log out functionality for secure user authentication."+ '\n'+
+"     -Create servers and channels to organize conversations effectively."+ '\n'+
+      "-Send messages in real-time to engage in dynamic discussions."+ '\n'+
+      "-Direct messaging capability for private and one-on-one conversations."+ '\n'+
+      "-Seamlessly upload files and images for easy sharing and collaboration."+ '\n'+
+      "-Video and audio rooms powered by Livekit for immersive communication."+ '\n'+
+      "-Utilized Next.js 13 and Tailwind CSS for a modern and responsive front-end design.",
     techStack: [
       'NEXT.JS',
       "TAILWIND",

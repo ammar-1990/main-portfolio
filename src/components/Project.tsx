@@ -50,7 +50,7 @@ const Project = ({
             >
               X
             </button>
-            <p className="text-white text-xs max-h-[300px] px-2 overflow-y-scroll myScrollThree">
+            <p className="text-white text-xs max-h-[300px] px-2 overflow-y-scroll myScrollThree whitespace-pre-line">
               {overView}
             </p>
             <h1 className="text-white mt-3">TechStack</h1>
