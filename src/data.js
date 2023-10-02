@@ -637,7 +637,7 @@ export const projects = [
       "LIVEKIT",
       "CLERK"
     ],
-    demo: "https://discord-clone-production-5d17.up.railway.app",
+    demo: "https://discord-clone-gamma-seven.vercel.app",
     code: "https://github.com/ammar-1990/discord-clone",
   },
 ];
