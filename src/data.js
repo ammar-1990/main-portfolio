@@ -640,4 +640,26 @@ export const projects = [
     demo: "https://discord-clone-gamma-seven.vercel.app",
     code: "https://github.com/ammar-1990/discord-clone",
   },
+  {
+    id: "29",
+    name: "E_COMMERCE DASHBOARD",
+    img: "/images/e-commerce-dashboard-next13.png",
+    pull: false,
+    overView:
+      "-Store Management: The dashboard enables users to add new stores and manage existing ones, providing a centralized platform for e-commerce operations." + '\n'+
+      "-Customization: Each store can be customized with unique billboards, categories, colors, and sizes, allowing for a personalized shopping experience." +'\n'+
+      "Product Management: Users can easily add, update, and remove products within each store, ensuring an up-to-date inventory."+ '\n'+
+"     Order Tracking: The dashboard provides a comprehensive view of all orders received, allowing users to track and manage the fulfillment process efficiently."+ '\n'+
+      "Integration with Stripe Pay API: The integration with Stripe Pay API enables secure payment processing, ensuring a seamless checkout experience for customers."+ '\n'+
+      "Analytics and Statistics: The dashboard offers a preview of statistics, providing insights into sales, revenue, and other key metrics to help make informed business decisions."+ '\n'
+ ,
+    techStack: [
+      'NEXT.JS',
+      "TAILWIND",
+      "SHADCN",
+      "STRIPE"
+    ],
+    demo: "https://next13-e-commerce-iota.vercel.app",
+    code: "https://github.com/ammar-1990/next13-e-commerce",
+  },
 ];
