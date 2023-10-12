@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import MyModal from "./my-modal";
 
 
 type Props = {
@@ -33,55 +34,19 @@ const Project = ({
 
   return (
     <div className="w-full flex pt-8 items-center justify-center flex-col flex-shrink-0 snap-center gap-2 relative z-20 snap-always">
-      {openModal && (
-        <div className="fixed inset-0 bg-black/60 flex items-center justify-center p-4 z-[100]">
-          <div
-            className="w-[350px] md:w-[700px] bg-[rgb(36,36,36)]
- rounded-lg md:p-10 p-6 text-justify relative z-[100]"
-          >
-            <h1 className="text-white capitalize py-2 text-center">
-              {" "}
-              {name.replace("_", " ").toLowerCase().replace("mern", "MERN")}
-            </h1>
-            <button
-              type="button"
-              onClick={() => setOpenModal(false)}
-              className="absolute top-0 right-0 text-xs rounded-tr-md rounded-bl-md bg-main text-white p-1 sm:p-2 duration-300 hover:bg-red-800"
-            >
-              X
-            </button>
-            <p className="text-white text-xs max-h-[300px] px-2 overflow-y-scroll myScrollThree whitespace-pre-line">
-              {overView}
-            </p>
-            <h1 className="text-white mt-3">TechStack</h1>
-            <ul className="text-white text-xs mt-1 list-disc pl-4">
-              {techStack.map((el, i) => (
-                <li key={i}>{el}</li>
-              ))}
-            </ul>
-            <div className="flex items-center gap-5 mt-5">
-              <Link
-                target="_blank"
-                href={demo}
-                className="px-3 bg-main text-white flex items-center gap-1 py-1 rounded-md text-xs active:scale-95 duration-300 hover:bg-red-800"
-               
-              >
-                <EyeIcon className="h-5 text-white cursor-pointer   " />
-                Demo
-              </Link>
-              <Link
-                target="_blank"
-                href={code}
-                className="px-3 bg-main text-white flex items-center gap-1 py-1 rounded-md text-xs active:scale-95 duration-300 hover:bg-red-800"
-               
-              >
-                <CodeBracketIcon className="h-5 text-white cursor-pointer   " />
-                Code
-              </Link>
-            </div>
-          </div>
-        </div>
-      )}
+    <MyModal
+    isOpen={openModal}
+    setOpenModal={setOpenModal}
+    name={name}
+    img={img}
+    pull={pull}
+    overView={overView}
+    techStack={techStack}
+    demo={demo}
+    code={code}
+    length={length}
+    order={order}
+    />
 
       <motion.div
         initial={{ y: -150, opacity: 0 }}
