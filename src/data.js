@@ -662,4 +662,30 @@ export const projects = [
     demo: "https://next13-e-commerce-iota.vercel.app",
     code: "https://github.com/ammar-1990/next13-e-commerce",
   },
+  {
+    id: "30",
+    name: "E_COMMERCE UI",
+    img: "/images/e-commerce-frontend.png",
+    pull: true,
+    overView:"The app boasts a sleek and intuitive design, providing an effortless shopping experience for users. Leveraging Next.js, a powerful React framework, I implemented an efficient client-side rendering approach, resulting in fast loading times and enhanced performance." + "\n" +
+
+"    One of the standout features of this app is its integration with an API, allowing the e-commerce platform to consume data from its own dashboard. This means that administrators can easily manage product categories, update inventory, and seamlessly sync information across the application." + "\n"+
+    
+   " To enhance user navigation, I incorporated a dynamic navbar that displays product categories. Users can effortlessly browse through various categories, ensuring a smooth and intuitive shopping experience. Additionally, each product is showcased with its own dedicated page, providing detailed information and images that captivate prospective buyers." + "\n" +
+    
+"    To streamline the checkout process and ensure secure transactions, I integrated Stripe payment processing. Users can conveniently complete their purchases with confidence, knowing that their sensitive payment information is handled with the highest level of encryption and security." + "\n" +
+    
+    "I am extremely proud of the results achieved with this Next.js e-commerce app. It combines the latest technologies, seamless API integration, dynamic product pages, and secure payment processing to offer an outstanding e-commerce experience." +"\n"+
+    
+    "If you're looking to elevate your online business and provide your customers with a modern, user-friendly, and secure shopping experience, I would love to share more about this project and discuss how it can benefit your organization. Feel free to reach out to me for further details or to arrange a demonstration."
+ ,
+    techStack: [
+      'NEXT.JS',
+      "TAILWIND",
+      "SHADCN",
+      "STRIPE"
+    ],
+    demo: "https://next13-e-commerce-iota.vercel.app",
+    code: "https://github.com/ammar-1990/next13-e-commerce",
+  },
 ];
