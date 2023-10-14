@@ -685,7 +685,7 @@ export const projects = [
       "SHADCN",
       "STRIPE"
     ],
-    demo: "https://next13-e-commerce-iota.vercel.app",
-    code: "https://github.com/ammar-1990/next13-e-commerce",
+    demo: "https://next13-e-commerce-frontend.vercel.app/",
+    code: "https://github.com/ammar-1990/next13-e-commerce-frontend",
   },
 ];
