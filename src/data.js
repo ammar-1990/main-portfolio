@@ -688,4 +688,30 @@ export const projects = [
     demo: "https://next13-e-commerce-frontend.vercel.app/",
     code: "https://github.com/ammar-1990/next13-e-commerce-frontend",
   },
+  {
+    id: "31",
+    name: "MYSTIC_AI_PLATFORM",
+    img: "/images/Mystic-logo.png",
+    pull: false,
+    overView:"1️⃣ Conversations: Engage in dynamic and intelligent conversations with our AI model. It leverages OpenAI's powerful language capabilities, ensuring meaningful and context-aware exchanges." + "\n"+
+
+    "2️⃣ Video Generation: Unleash your creativity with our AI-powered video generation feature. Transform simple concepts into stunning videos using our advanced algorithms." + "\n"+
+    
+  "  3️⃣ Image Generation: Discover a world of visual possibilities through our AI-generated images. Let our platform create unique and captivating visuals tailored to your needs." + "\n"+
+    
+"    4️⃣ Music Generation: Immerse yourself in the realm of music with our AI-generated compositions. Experience harmonies and melodies that resonate with your emotions." + "\n"+
+    
+   " 5️⃣ Code Generation: Simplify your coding process with our AI code generation feature. Get assistance in writing code snippets and accelerate your development workflow." 
+ ,
+    techStack: [
+      'NEXT.JS',
+      "TAILWIND",
+      "SHADCN",
+      "STRIPE",
+      "OPEN_AI"
+    ],
+    demo: "https://ai-saa-s-flame.vercel.app",
+    code: "https://github.com/ammar-1990/AI-SaaS",
+  },
+  
 ];
